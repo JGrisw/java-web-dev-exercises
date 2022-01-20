@@ -23,7 +23,7 @@ public class CountingCharacters {
                     charCount.put(i,0);
                 }
                 if (charCount.containsKey(i)){
-                    charCount.put(i, charCount.get(i).intValue() + 1);
+                    charCount.put(i, charCount.get(i) + 1);
                 }
             }
             for(Map.Entry<Character, Integer> letter : charCount.entrySet()){

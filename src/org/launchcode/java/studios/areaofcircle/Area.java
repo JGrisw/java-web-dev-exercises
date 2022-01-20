@@ -1,5 +1,8 @@
 package org.launchcode.java.studios.areaofcircle;
 import java.util.Scanner;
+
+import static org.launchcode.java.studios.areaofcircle.Circle.*;
+
 public class Area {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -12,7 +15,7 @@ public class Area {
             }
             radius = input.nextDouble();
                 if (radius > 0.0 ) {
-                    Double area = Circle.getArea(radius);
+                    Double area = getArea(radius);
                     System.out.println("The area of a circle of radius " + radius + " is: " + area);
                 } else {
                     System.out.println("You must enter a positive number sir");

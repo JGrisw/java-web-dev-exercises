@@ -24,7 +24,7 @@ public class HashMapPractice {
                 input.next();
             }
 
-        } while (!newKid.equals(" "));
+        } while (!newKid.equals(""));
 
         System.out.println("\nClass Roster");
 

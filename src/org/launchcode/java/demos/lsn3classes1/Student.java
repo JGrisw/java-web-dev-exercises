@@ -16,33 +16,42 @@ public class Student {
         this.numberOfCredits = numberOfCredits;
         this.gpa = gpa;
     }
-    public String getName() {
-        return name;
+     public String getName() {return this.name;}
+     public void setName(String aName) {
+        this.name = aName;
     }
-
-    public void setName(String aName) {
-        name = aName;
+     public int getStudentId() {return this.studentId;}
+     public void setStudentId(int aStudentId) {this.studentId = aStudentId;}
+     public int getNumberOfCredits() {
+        return this.numberOfCredits;
     }
-
-    public int getStudentId() {
-        return studentId;
-    }
-    public void setStudentId(int aStudentId) {
-        studentId = aStudentId;
-    }
-
-    public int getNumberOfCredits() {
-        return numberOfCredits;
-    }
-    public void setNumberOfCredits( int aNumberOfCredits){
-        numberOfCredits = aNumberOfCredits;
-    }
+     public void setNumberOfCredits( int aNumberOfCredits){this.numberOfCredits = aNumberOfCredits;}
      public double getGpa() {
-        return gpa;
+        return this.gpa;
      }
-
      public void setGpa(double aGpa) {
-        gpa = aGpa;
+         this.gpa = aGpa;
      }
 
+     public String getGradeLevel(){
+         if (this.numberOfCredits >= 0 && this.numberOfCredits <= 29) {
+            return "Freshman";
+         }
+         if(this.numberOfCredits >= 30 && this.numberOfCredits <=59){
+             return "Sophomore";
+         }
+         if(this.numberOfCredits >= 60 && this.numberOfCredits<=89 ){
+             return "Junior";
+         }
+         if(this.numberOfCredits >=90 ){
+             return "Senior";
+         }
+          else {
+              return null;
+         }
+     }
+
+     public void addGrade(int courseCredits, double grade){
+
+     }
 }
