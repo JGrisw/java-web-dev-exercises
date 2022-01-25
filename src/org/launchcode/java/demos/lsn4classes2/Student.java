@@ -31,7 +31,7 @@ public class Student {
 
      //TODO: Uncomment and complete the getGradeLevel method here:
      public  static String getGradeLevel(int credits){
-         if (credits >= 0 && credits <= 29) {
+         if ( credits <= 29) {
              return "Freshman";
          }
          if(credits >= 30 && credits <=59){
