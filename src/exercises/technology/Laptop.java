@@ -4,8 +4,8 @@ public class Laptop extends Computer{
     private int resolution;
     private String speakers;
 
-    public Laptop(int aResolution, String aSpeakers,int aSerialNumber, String aBrand, String aModel) {
-        super(aSerialNumber, aBrand, aModel);
+    public Laptop(int aResolution, String aSpeakers, String aBrand, String aModel) {
+        super( aBrand, aModel);
         resolution = aResolution;
         speakers = aSpeakers;
     }

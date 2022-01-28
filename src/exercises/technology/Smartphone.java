@@ -4,8 +4,8 @@ public class Smartphone extends Computer {
     private int cameraMP;
     private String color;
 
-    public Smartphone(int aCameraMP,String aColor ,int aSerialNumber, String aBrand, String aModel) {
-        super(aSerialNumber, aBrand, aModel);
+    public Smartphone(int aCameraMP,String aColor , String aBrand, String aModel) {
+        super( aBrand, aModel);
         cameraMP = aCameraMP;
         color = aColor;
     }

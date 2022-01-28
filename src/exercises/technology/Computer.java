@@ -2,13 +2,13 @@ package exercises.technology;
 
 public class Computer {
 
-    private int serialNumber;
+    private int serialNumber= 1;
     private String brand;
     private String model;
     public int batteryLevel = 100;
 
-    public Computer (int aSerialNumber, String aBrand, String aModel) {
-        serialNumber = aSerialNumber;
+    public Computer ( String aBrand, String aModel) {
+        serialNumber += serialNumber;
         brand = aBrand;
         model = aModel;
     }
